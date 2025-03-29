@@ -2,16 +2,18 @@ import { useState } from "react";
 import "./App.css";//Css style sheet
 
 function App() {
+
   const [value, setValue] = useState([]);
+  
   return (
     <div className="contain bg ">
       <div className="calculator border">
         <form action="" className="">
-          <div className="form-control-ms d-flex  ">
+          <div className="form-control-md d-flex  ">
             <input
               type="text"
               className="mb-2 p-1 rounded "
-              style={{ textAlign: "end" }}
+              style={{ textAlign: "end" ,width:"220px",height:"40px" }}
               value={value}
             />
           </div>
